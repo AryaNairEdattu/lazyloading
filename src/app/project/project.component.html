@@ -1,0 +1,50 @@
+<div id="title">
+        <h4>
+            Projects
+          </h4>
+        </div>
+        <br>
+        
+
+        <div><label></label><input size="90" style="height:20px;">
+        <button type="button" style="width:100px;height:30px;color:aliceblue;background-color:darkgrey">
+            SEARCH</button>
+            </div>
+            <br>
+
+            <div id="button">
+            <form method="get" action="/project/addprobtn">
+            <button type="submit" style="color:white;background-color:grey"><a routerLink="/project/addprobtn">Add Project</a></button>
+            </form></div>
+                <br>
+                
+                 <table style="width:100%">
+                    <tr>
+                      <th align="left">NAME</th>
+                      <th align="left">TYPE</th>
+                      <th align="left">STATUS</th>
+                      <th align="left">MANAGER</th>
+                      <th align="left">DIRECTOR</th>
+                      <th align="left">ACTION</th>
+                    </tr>
+                
+                    <tr *ngFor="let i of datas.data">
+                            
+                                <td>{{i.Name}}</td>
+                                <td>{{i.Type}}</td>
+                                <td>{{i.Status}}</td>
+                                <td>{{i.Manager}}</td>
+                                <td>{{i.Director}}</td>
+                                
+                               
+                            </tr>
+                
+                    
+            
+                    
+            
+                  </table> 
+              
+                
+    
+  

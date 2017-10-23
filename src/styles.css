@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+body,html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.full-height{
+    height: 100%;
+}
+.full-width{
+    width:100%;
+}
+.header{
+    width: 100%;
+    float: left;
+}
+.logo-header{
+   
+    background-color: #0868ad;
+    height: 70px;
+    float: left;
+    width: 100%;
+}
+.logo{
+    height: 100%;
+    line-height: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    float: left;
+    border-left:solid 1px #fff;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 25px;
+    color: #fff;
+    padding-left: 10px;
+}
+/*navigation*/
+.navigation{
+    float: left;
+    background-color: #333a3f;
+    height: 40px;
+    width: 100%;
+}
+.navbar-default{
+    height: 100%;
+    background-color: transparent !important;
+    border:none;
+    margin-bottom: 0 !important;
+    height: 100% !important;
+    min-height: 10px !important;
+}
+.navbar-nav>li>a{
+    padding:10px 20px !important;
+    color: #fff !important;
+    text-align: center;
+    font-size: 16px;
+}
+.navbar-nav>li>a:hover{
+    background-color: #e7e7e7 !important;
+    color: #444 !important;
+}
+.navbar-nav>li.active>a{
+    color: #444 !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-collapse{
+    height: 100% !important;
+}
+.menu-width{
+    float: left;
+    width:20%;
+}
+.navbar-toggle{
+    margin: 3px 0 0 0;
+}
+.content-area{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+@media (max-width: 767px){
+    .navbar-default .navbar-collapse{
+        height: auto !Important;
+    }
+    .menu-width{
+        width: 100%;
+    }
+    .navbar-nav>li>a{
+        color: #444 !important;
+    }
+    .navbar-nav{
+        border:solid 1px #ccc;
+    }
+    .navbar-default{
+        border:none !important;
+    }
+    .navbar-default .navbar-collapse{
+        border:none;
+    }
+
+}
